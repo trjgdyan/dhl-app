@@ -5,17 +5,23 @@ import { useState } from "react";
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // logic
+    if(!email || !password) {
+      alert("Mohon lengkapi semua field!");
+      return;
+    }
+    
+    alert(`Email: ${email}\nPassword: ${password}`);
   };
 
   return (
     <div className="min-h-screen w-full flex bg-white">
       
-      {/* LEFT SIDE: Visual & Branding (Hidden on mobile) 
-          Ini memberikan kesan "Bespoke/Custom" yang kuat */}
+      {/* LEFT SIDE */}
       <div className="hidden lg:flex w-1/2 relative bg-[#0f172a] overflow-hidden flex-col justify-between p-12 text-white">
         
         {/* Background Gradients & Texture */}
@@ -32,7 +38,7 @@ export default function LoginPage() {
              <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
                 <span className="font-bold text-white">A</span>
              </div>
-             <span className="font-semibold tracking-wide text-lg">Acme Inc.</span>
+             <span className="font-semibold tracking-wide text-lg">DHL Inc.</span>
           </div>
         </div>
 
@@ -57,12 +63,11 @@ export default function LoginPage() {
         </div>
 
         <div className="relative z-10 text-sm text-blue-400/60 font-medium">
-          © 2024 Acme Inc. All rights reserved.
+          © 2026 DHL Inc. All rights reserved.
         </div>
       </div>
 
-      {/* RIGHT SIDE: The Form 
-          Bersih, tanpa border kartu, fokus pada input */}
+      {/* RIGHT SIDE*/}
       <div className="w-full lg:w-1/2 flex items-center justify-center p-8 sm:p-12 lg:p-24 bg-white relative">
         <div className="w-full max-w-[420px] space-y-10">
           
@@ -155,7 +160,7 @@ export default function LoginPage() {
           </div>
 
           <p className="text-center text-slate-500">
-            Don't have an account? <a href="/register" className="font-bold text-blue-600 hover:underline">Sign up for free</a>
+            Don't have an account? <a href="/register" className="font-bold text-blue-600 hover:underline">Sign up!</a>
           </p>
 
         </div>
