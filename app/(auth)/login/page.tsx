@@ -44,10 +44,10 @@ export default function LoginPage() {
 
         <div className="relative z-10 max-w-lg">
           <h2 className="text-5xl font-bold leading-tight mb-6">
-            Start turning your <span className="text-blue-400">ideas</span> into reality.
+            Hand over your <span className="text-blue-400">needs</span> to the professionals.
           </h2>
           <p className="text-blue-200/80 text-lg leading-relaxed">
-            "This platform has completely transformed how we manage our design systems. It's intuitive, fast, and beautiful."
+            "This platform has completely helped our clients solve their problems. It's intuitive, fast, and solution-oriented."
           </p>
           
           <div className="mt-8 flex items-center gap-4">
@@ -63,7 +63,7 @@ export default function LoginPage() {
         </div>
 
         <div className="relative z-10 text-sm text-blue-400/60 font-medium">
-          © 2026 DHL Inc. All rights reserved.
+          © 2026 DHL Inc. All rights reserved. 
         </div>
       </div>
 

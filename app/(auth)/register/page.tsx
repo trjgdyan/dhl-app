@@ -71,7 +71,7 @@ export default function RegisterPage() {
           {/* Header */}
           <div className="space-y-2">
             <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Create an account</h1>
-            <p className="text-slate-500 text-lg">Start your 30-day free trial.</p>
+            {/* <p className="text-slate-500 text-lg">Start your 30-day free trial.</p> */}
           </div>
 
           <form className="space-y-8">
